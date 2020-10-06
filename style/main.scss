@@ -45,13 +45,13 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 
 %btn-new {
         position: relative;
-        bottom: 180px;
+        bottom: 240px;
         background-color: #99E2D0;
         width: 60px;
         display: flex;
         justify-content: center;
         color: #008766;
-        left: 200px;
+        left: 315px;
     }
 
 
@@ -164,16 +164,39 @@ header{
 
 // ---PLACEMENT---
 figure{
-    margin: auto;
+    margin-top: 0px;
+    margin-left: 0px;
     max-width: 270px;
 }
 img{
-        width: 270px;
-        height: 180px;
+        width: 151%;
+        height: 255px;
+    }
+    .place{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 25px;
+        margin-top: 25px;
+        overflow: hidden;
+        .container_text{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        p{
+            margin: -21px 0px 20px 0px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     // BTN LIKE 
-.btn {
+    .menu_title{
+        display: flex;
+        justify-content: space-around;
     .fa-heart {
         color: $color-white;
         text-shadow: 1px 1px 5px black;
@@ -181,8 +204,7 @@ img{
         &:active{
             color: $color-primary;
         }
-    }
-    
+        }
 }
 
 .info_new{
@@ -196,9 +218,14 @@ footer {
     width: 100%;
     color: $color-white;
     padding: 40px 20px 20px 20px;
-    .container_footer{
-    }
+    
     h3{
         font-family: shrikhand-regular;
+    }
+    p{
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 }
