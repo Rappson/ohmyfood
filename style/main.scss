@@ -179,9 +179,6 @@ img{
         border-radius: 25px;
         margin-top: 25px;
         overflow: hidden;
-        .place-4{
-            margin-bottom: 25px;
-        }
         .container_text{
             display: flex;
             flex-direction: column;
@@ -221,6 +218,7 @@ footer {
     width: 100%;
     color: $color-white;
     padding: 40px 20px 20px 20px;
+    margin-top: 25px;
     
     h3{
         font-family: shrikhand-regular;
