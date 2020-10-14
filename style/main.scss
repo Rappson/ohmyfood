@@ -1,9 +1,10 @@
 //fonts
-
-@font-face{
-    font-family: shrikhand-regular;
-    src: url(./polices/Shrikhand-Regular.otf);
+@font-face {
+    font-family: shrikhand;
+    src: url(./fonts/shrikhand/shrikhand-regular.otf);
 }
+
+
 
 //queries
         //mobile
@@ -163,6 +164,12 @@ header{
 }
 
 // ---PLACEMENT---
+main{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
 figure{
     margin-top: 0px;
     margin-left: 0px;
@@ -175,33 +182,33 @@ img{
     .place{
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
         border-radius: 25px;
+        box-shadow: 5px 5px 5px grey;
         margin-top: 25px;
+        margin-left: 25px;
         overflow: hidden;
         .container_text{
             display: flex;
             flex-direction: column;
-            text-align: center;
+            text-align: start;
+            margin-left: 25px;
+            margin-right: 25px;
         }
         p{
             margin: -21px 0px 20px 0px;
         }
-        .text{
-            display: flex;
-            flex-direction: column;
-        }
+        
     }
 
     // BTN LIKE 
     .menu_title{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     .fa-heart {
         color: $color-white;
         text-shadow: 1px 1px 5px black;
         
-        &:active{
+        &:hover{
             color: $color-primary;
         }
         }

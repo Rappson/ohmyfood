@@ -1,6 +1,6 @@
 @font-face {
-  font-family: shrikhand-regular;
-  src: url(./polices/Shrikhand-Regular.otf);
+  font-family: shrikhand;
+  src: url(./fonts/shrikhand/shrikhand-regular.otf);
 }
 .info_new {
   position: relative;
@@ -129,6 +129,11 @@ header a {
   color: #fff;
 }
 
+main a {
+  text-decoration: none;
+  color: black;
+}
+
 figure {
   margin-top: 0px;
   margin-left: 0px;
@@ -143,33 +148,32 @@ img {
 .place {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   border-radius: 25px;
+  box-shadow: 5px 5px 5px grey;
   margin-top: 25px;
+  margin-left: 25px;
   overflow: hidden;
 }
 .place .container_text {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .place p {
   margin: -21px 0px 20px 0px;
 }
-.place .text {
-  display: flex;
-  flex-direction: column;
-}
 
 .menu_title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menu_title .fa-heart {
   color: #fff;
   text-shadow: 1px 1px 5px black;
 }
-.menu_title .fa-heart:active {
+.menu_title .fa-heart:hover {
   color: #9356DC;
 }
 
