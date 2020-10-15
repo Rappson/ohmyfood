@@ -1,0 +1,37 @@
+span {
+  text-decoration: underline;
+  text-decoration-color: #99E2D0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 2px grey;
+  text-decoration: none;
+}
+header h1 {
+  font-family: shrikhand-regular;
+}
+header a {
+  display: flex;
+  color: black;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  margin-top: 25px;
+}
+footer h3 {
+  font-family: shrikhand-regular;
+}
+footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=menu.css.map */

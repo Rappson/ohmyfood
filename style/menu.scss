@@ -1,0 +1,80 @@
+//colors
+
+$color-primary: #9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary: #99E2D0;
+$color-white: #fff;
+$color-body: #ecebeb;
+$color-gradient: linear-gradient(to bottom right, $color-secondary, $color-primary);
+
+//mixin and placeholder
+
+@mixin position-center($color:$color-white){
+    display: flex;
+    justify-content: center;
+    background-color: $color;
+}
+
+@mixin btn_step ($right: 35px){
+    position: relative;
+    right: $right;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+%btn-new {
+        position: relative;
+        bottom: 240px;
+        background-color: #99E2D0;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        color: #008766;
+        left: 315px;
+    }
+
+span {
+    text-decoration: underline;
+    text-decoration-color: $color-tertiary;
+}
+
+// ----HEADER MENU (MODIFIED)----   
+header{
+    @include position-center();
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px grey;
+    text-decoration: none;
+    h1{
+        font-family: shrikhand-regular;
+    }
+    a{
+        display: flex;
+        color: black;
+    }
+}
+
+
+//footer
+footer {
+    background-color: #353535;
+    width: 100%;
+    color: $color-white;
+    padding: 40px 20px 20px 20px;
+    margin-top: 25px;
+    
+    h3{
+        font-family: shrikhand-regular;
+    }
+    p{
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
