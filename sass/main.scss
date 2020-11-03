@@ -11,6 +11,10 @@
 $mobile_s: 320px;
 $mobile_m: 375px;
 $mobile_l: 425px;
+        //Tablet
+$tablet: 768px;
+        //ordi (laptop et pc fixe)
+$ordi: 1440px;
 
 
 //colors
@@ -126,7 +130,7 @@ header{
     border-bottom: 1px solid black;
     box-shadow: 0px 2px grey;
     text-decoration: none;
-    .img_logo{
+    .header__logo{
         img{
             width: 150px;
             height: 50px;
@@ -161,6 +165,7 @@ header{
     .discover{
         @include position-center();
         height: 310px;
+        width: 100%;
         flex-direction: column;
         text-align: center;
         padding: 10px 20px 10px 20px;
@@ -191,9 +196,11 @@ header{
             }
         }
         }
+        //explanation
         .explanation{
             height: 360px;
             margin-top: 30px;
+            width: 100%;
             h2{
                 font-size: 1.5rem;
             }
@@ -203,26 +210,31 @@ header{
             }
             .container_step{
                 display: flex;
-                margin: 40px;
+                margin-top: 40px;
                 flex-direction: column;
                 align-items: center;
                 height: 73%;
-            
+                
             }
             .btn_step{
+                width: 80%;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: start;
                 margin-bottom: 35px;
                 width: 300px;
                 border: 1px solid $color-body;
                 border-radius: 30px;
                 box-shadow: 3px 3px 3px grey;
                 font-weight: bold;
-                @media (max-width: $mobile_s) {
-                    width: 230px;
+                //-----media-----
+                @media (max-width: $mobile_l) {
+                    width: 80%;
                 }
-                @media (min-width: $mobile_m) {
-                    width: 280px;
+                @media (min-width: $tablet){
+                    width: 60%;
+                }
+                @media (min-width: $ordi){
+                    width: 30%;
                 }
 
                 &:hover{
@@ -231,13 +243,23 @@ header{
                     color: $color-primary;
                 }
             }
-            .step__1, .step__2{
+            .step__1{
                 @extend %btn_step;
+                margin-left: 35px;
+                margin-right: 5px;
+            }
+             .step__2{
+                @extend %btn_step;
+                margin-left: 30px;
             }
             .step__3{
                 @extend %btn_step;
-                height: 30px;
-                width: 35px;
+                margin-left: 30px;
+                margin-right: -5px;
+                //----media----
+                @media (min-width){
+                    //width: 25px;
+                }
             }
         }
 }
@@ -266,16 +288,29 @@ main{
         text-decoration: none;
         color: black;
     }
+    .title_main{
+        margin-left: 15px;
+        font-weight: bold;
+    }
 }
 figure{
     margin-top: 0px;
     margin-left: 0px;
     max-width: 270px;
 }
-img{
+.container_place{
+    .container_menu{
+        @media (min-width: $tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    }
+    img{
         width: 151%;
         height: 255px;
-    }
+        }
+}
     .place{
         display: flex;
         flex-direction: column;
@@ -284,6 +319,10 @@ img{
         margin-top: 25px;
         margin-left: 25px;
         overflow: hidden;
+        //----media----
+        @media (min-width: $tablet){
+            width: 390px;
+        }
         .container_text{
             display: flex;
             flex-direction: column;
@@ -321,13 +360,13 @@ img{
 footer {
     background-color: #353535;
     width: 100%;
-    color: $color-white;
+    color: $color-white; //couleur du texte
     padding: 40px 20px 20px 20px;
     margin-top: 25px;
-    
-    h3{
-        font-family: shrikhand-regular;
-    }
+      img{
+          width: 150px;
+          height: 50px;
+      }
     p{
         &:hover{
             text-decoration: underline;
