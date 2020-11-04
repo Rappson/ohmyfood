@@ -110,6 +110,21 @@ main .choice .price {
   font-family: "Roboto";
   cursor: pointer;
 }
+@media (max-width: 320px) {
+  .btn_order {
+    left: 65px;
+  }
+}
+@media (min-width: 768px) {
+  .btn_order {
+    left: 145px;
+  }
+}
+@media (min-width: 1440px) {
+  .btn_order {
+    left: 210px;
+  }
+}
 
 footer {
   background-color: #353535;

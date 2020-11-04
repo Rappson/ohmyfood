@@ -156,6 +156,15 @@ main{
     justify-content: center;
     font-family: 'Roboto';
     cursor: pointer;
+    @media (max-width: $mobile_s){
+        left: 65px;
+    }
+    @media (min-width: $tablet){
+        left: 145px;
+    }
+    @media (min-width: $ordi){
+        left: 210px;
+    }
 }
 
 //footer
