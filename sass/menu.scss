@@ -95,18 +95,23 @@ main{
         margin-bottom: 380px;
     }
     .choice{
-        border: 1px solid black;
         border-radius: 30px;
+        box-shadow: 2px 2px 5px grey;
+        background-color: white;
         display: flex;
         flex-direction: column;
-        height: 100px;
+        height: 105px;
         padding-left: 15px;
         cursor: pointer;
         margin-bottom: 15px;
+        font-family: 'Roboto';
 
         h4{
             margin-top: 10px;
             margin-bottom: 0;
+        }
+        .main_paragraph{
+            width: 260px;
         }
         .price{
             position: relative;
@@ -114,6 +119,20 @@ main{
             left: 87%;
         }
     }
+}
+
+.btn_order{
+    position: relative;
+    bottom: 365px;
+    left: 95px;
+    border: 1px solid white;
+    background: $color-gradient;
+    color: $color-white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    cursor: pointer;
 }
 
 //footer
