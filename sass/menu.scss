@@ -5,6 +5,16 @@
 /*font-family: 'Roboto', sans-serif;*/
 
 
+//queries
+        //mobile
+        $mobile_s: 320px;
+        $mobile_m: 375px;
+        $mobile_l: 425px;
+                //Tablet
+        $tablet: 768px;
+                //ordi (laptop et pc fixe)
+        $ordi: 1440px;
+        
 //colors
 
 $color-primary: #9356DC;
@@ -61,7 +71,7 @@ header{
     border-bottom: 1px solid black;
     box-shadow: 0px 2px grey;
     h1{
-        font-family: shrikhand-regular;
+        font-family: 'shrikhand';
     }
     a{
         display: flex;
@@ -75,6 +85,15 @@ header{
         height: 300px;
         margin-left: -10px;
         width: 102%;
+        @media (min-width: $tablet){
+            height: 500px;
+        }
+        @media (min-width: 1024px){
+            height: 700px;
+        }
+        @media (min-width: 1440px){
+            height: 1060px;
+        }
     }
 }
 
@@ -105,6 +124,9 @@ main{
         cursor: pointer;
         margin-bottom: 15px;
         font-family: 'Roboto';
+        @media (max-width: $mobile_l) {
+            font-size: 0.8rem;
+        }
 
         h4{
             margin-top: 10px;
@@ -147,7 +169,7 @@ footer {
     bottom: 13rem;
     
     h3{
-        font-family: shrikhand-regular;
+        font-family: 'shrikhand';
     }
     p{
         &:hover{
