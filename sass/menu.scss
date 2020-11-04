@@ -1,3 +1,10 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+/*font-family: 'Shrikhand', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+
 //colors
 
 $color-primary: #9356DC;
@@ -57,7 +64,30 @@ header{
         color: black;
     }
 }
+//IMAGE DE PRESENTATION
+.presentation_picture{
+    margin: 0px;
+    img{
+        height: 300px;
+        margin-left: -10px;
+        width: 105%;
+    }
+}
 
+//MAIN
+main{
+    border: 1px solid black; //CHANGER LA COULEUR
+    border-radius: 30px;
+    padding: 20px;//OPTIMISER LE PADDING POUR LE RESTE DU MENU (QUITTE A FAIRE UN PAR UN)
+    position: relative;
+    bottom: 60px;
+    background-color: #f6f6f6;
+    .container_title_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 //footer
 footer {

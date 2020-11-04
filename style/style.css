@@ -326,6 +326,7 @@ footer .title_footer {
   font-family: "shrikhand";
   width: 150px;
   height: 50px;
+  font-size: 25px;
 }
 footer p:hover {
   text-decoration: underline;
