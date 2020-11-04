@@ -2,6 +2,10 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
+body {
+  margin: 0;
+}
+
 span {
   text-decoration: underline;
   text-decoration-color: #99E2D0;
@@ -28,7 +32,7 @@ header a {
 .presentation_picture img {
   height: 300px;
   margin-left: -10px;
-  width: 105%;
+  width: 102%;
 }
 
 main {
@@ -44,6 +48,28 @@ main .container_title_menu {
   flex-direction: row;
   justify-content: space-between;
 }
+main .container_dessert {
+  margin-bottom: 380px;
+}
+main .choice {
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  padding-left: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+main .choice h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+main .choice .price {
+  position: relative;
+  bottom: 62px;
+  left: 87%;
+}
 
 footer {
   background-color: #353535;
@@ -51,6 +77,8 @@ footer {
   color: #fff;
   padding: 40px 20px 20px 20px;
   margin-top: 25px;
+  position: relative;
+  bottom: 13rem;
 }
 footer h3 {
   font-family: shrikhand-regular;

@@ -46,6 +46,10 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
         left: 315px;
     }
 
+body{
+    margin: 0;
+}
+
 span {
     text-decoration: underline;
     text-decoration-color: $color-tertiary;
@@ -70,7 +74,7 @@ header{
     img{
         height: 300px;
         margin-left: -10px;
-        width: 105%;
+        width: 102%;
     }
 }
 
@@ -87,6 +91,29 @@ main{
         flex-direction: row;
         justify-content: space-between;
     }
+    .container_dessert{
+        margin-bottom: 380px;
+    }
+    .choice{
+        border: 1px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding-left: 15px;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        h4{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .price{
+            position: relative;
+            bottom: 62px;
+            left: 87%;
+        }
+    }
 }
 
 //footer
@@ -96,6 +123,8 @@ footer {
     color: $color-white;
     padding: 40px 20px 20px 20px;
     margin-top: 25px;
+    position: relative;
+    bottom: 13rem;
     
     h3{
         font-family: shrikhand-regular;
