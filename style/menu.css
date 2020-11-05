@@ -58,10 +58,29 @@ main {
   bottom: 60px;
   background-color: #f6f6f6;
 }
+@media (min-width: 1024px) {
+  main {
+    bottom: 455px;
+  }
+}
+main h2 {
+  font-family: "shrikhand";
+  font-size: 1.5rem;
+}
 main .container_title_menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 10rem;
+}
+main .container_title_menu .fa-heart {
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+  position: relative;
+  top: 35px;
+}
+main .container_title_menu .fa-heart:hover {
+  color: #9356DC;
 }
 main .container_dessert {
   margin-bottom: 380px;
@@ -125,6 +144,11 @@ main .choice .price {
     left: 210px;
   }
 }
+@media (min-width: 1024px) {
+  .btn_order {
+    bottom: 705px;
+  }
+}
 
 footer {
   background-color: #353535;
@@ -134,6 +158,11 @@ footer {
   margin-top: 25px;
   position: relative;
   bottom: 13rem;
+}
+@media (min-width: 1024px) {
+  footer {
+    bottom: 30rem;
+  }
 }
 footer h3 {
   font-family: "shrikhand";

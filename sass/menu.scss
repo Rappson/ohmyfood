@@ -105,10 +105,28 @@ main{
     position: relative;
     bottom: 60px;
     background-color: #f6f6f6;
+    //media
+    @media (min-width: 1024px){
+        bottom: 455px;
+    }
+    h2{
+        font-family: 'shrikhand';
+        font-size: 1.5rem;
+    }
     .container_title_menu{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 10rem;
+        .fa-heart{
+            color: $color-white;
+            text-shadow: 1px 1px 5px black;
+            position: relative;
+            top: 35px;
+            &:hover{
+                color: $color-primary;
+            }
+        }
     }
     .container_dessert{
         margin-bottom: 380px;
@@ -165,6 +183,9 @@ main{
     @media (min-width: $ordi){
         left: 210px;
     }
+    @media (min-width: 1024px){
+        bottom: 705px;
+    }
 }
 
 //footer
@@ -176,6 +197,9 @@ footer {
     margin-top: 25px;
     position: relative;
     bottom: 13rem;
+    @media (min-width: 1024px) {
+        bottom: 30rem;
+    }
     
     h3{
         font-family: 'shrikhand';
