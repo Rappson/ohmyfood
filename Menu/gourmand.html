@@ -21,104 +21,179 @@
 <body>
 
     <!--HEADER-->
-    <header>
-        <div class="btn btn_return">
-            <i class="fas fa-arrow-left"></i>
-        </div>
-        <!--LOGO-->
-        <a href="../index.html"><img src="../images/logo/ohmyfood.png" alt="logo du site ohmyfood"></a>
-
-    </header>
+	<header>
+		<div class="container_logo">
+            <a href="../index.html" title="Page d'accueil">
+                <i class="fas fa-arrow-left"></i>
+				<figure class="logo header__logo">
+					<img src="../images/logo/ohmyfood.png" alt="logo du site">
+				</figure>
+            </a>
+		</div>
+	</header>
 
     <!--BACKGROUND-->
     <div class="bg-image gourmand">
 
     </div>
 
-    <main>
-        <!--composition du menu-->
-        <div class="container_title_menu">
-            <h2> Le gourmand </h2> <i class="fas fa-heart"></i>
-            <div class="btn_like">
-
+    <section class="menu-container">
+        <div class="ligne">
+            <h1 class="heading">Le Gourmand</h1>
+            <div class="coeur">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
             </div>
         </div>
-
-        <!--entree-->
-        <article class="container_menu">
-            <section class="container_entree">
-                <h3><span>ENTR</span>EES</h3>
-
-
-                <div class="choice choice_entree">
-                    <h4>Tuna Carpaccio</h4>
-                    <p class="main_paragraph">seasoned with yuzu</p>
-                    <p class="price">25€</p>
+        <!--BLOC-->
+        <h2 class="entree">ENTREES</h2>
+        <div class="menu-items">
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Tuna Carpaccio</p>
+                    <p>seasoned with yuzu</p>
                 </div>
-
-                <div class="choice choice_entree">
-                    <h4>Crunchy Lobster Croquets</h4>
-                    <p class="main_paragraph">with seasonal vegetables</p>
-                    <p class="price">35€</p>
+                <div class="menu-item__prix">
+                    <p>25€</p>
                 </div>
-
-                <div class="choice choice_entree">
-                    <h4>Mushroom soup</h4>
-                    <p class="main_paragraph">with truffle</p>
-                    <p class="price">20€</p>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
                 </div>
-            </section>
-            <!--MAIN DISH-->
-            <section class="container_main_dish">
-                <h3><span>MAIN</span>DISH</h3>
-
-                <div class="choice choice_main_dish">
-                    <h4>Roast Chicken with Provincal Herbs</h4>
-                    <p class="main_paragraph">with truffle cream</p>
-                    <p class="price">40€</p>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Crunchy Lobster Croquets</p>
+                    <p>with seasonal vegetables</p>
                 </div>
-
-                <div class="choice choice_main_dish">
-                    <h4>Roasted Lobster</h4>
-                    <p class="main_paragraph">with seasonal vegetables</p>
-                    <p class="price">35€</p>
+                <div class="menu-item__prix">
+                    <p>35€</p>
                 </div>
-
-                <div class="choice choice_main_dish">
-                    <h4>Angust Beef Ribs</h4>
-                    <p class="main_paragraph">with mashed parnshnips</p>
-                    <p class="price">44€</p>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
                 </div>
-            </section>
-            <!--DESSERTS-->
-            <section class="container_dessert">
-                <h3><span>DESS</span>ERTS</h3>
-
-                <div class="choice choice_dessert">
-                    <h4>Assorted Dessert Plate</h4>
-                    <p class="main_paragraph">Chef's choice</p>
-                    <p class="price">18€</p>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Mushroom soup</p>
+                    <p>with truffles</p>
                 </div>
-
-                <div class="choice choice_dessert">
-                    <h4>Crème Brulée</h4>
-                    <p class="main_paragraph">revisited</p>
-                    <p class="price">22€</p>
+                <div class="menu-item__prix">
+                    <p>20€</p>
                 </div>
-
-                <div class="choice choice_dessert">
-                    <h4>Tiramisu</h4>
-                    <p class="main_paragraph">with hazelnuts</p>
-                    <p class="price">23€</p>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
                 </div>
+            </div>
+            <!--End item-->
+        </div>
+        <!--end BLOC-->
 
-            </section>
-        </article>
-    </main>
-    <!--btn order-->
-    <div class="btn btn_order">
-        <p>Order</p>
-    </div>
+        <!--BLOC-->
+        <h2 class="entree">MAIN DISH</h2>
+        <div class="menu-items">
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Roast Chicken with Provincal Herbs</p>
+                    <p>with truffle cream</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>40€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Roasted Lobster</p>
+                    <p>with seasonal vegetables</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>35€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Angus Beef Ribs</p>
+                    <p>with mashed parsnips</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>44€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+        </div>
+        <!--end BLOC-->
+
+        <!--BLOC-->
+        <h2 class="entree">DESSERT</h2>
+        <div class="menu-items">
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Assorted Dessert Plate</p>
+                    <p>Chef's choice</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>18€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Crème brulée</p>
+                    <p>revisited</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>22€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+            <!--Debut item-->
+            <div class="menu-item">
+                <div class="menu-item__plat">
+                    <p class="principal">Tiramisu</p>
+                    <p>with hazelnuts</p>
+                </div>
+                <div class="menu-item__prix">
+                    <p>23€</p>
+                </div>
+                <div class="menu-item__animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <!--End item-->
+        </div>
+        <!--end BLOC-->
+
+        <div class="btn-row">
+            <button class="btn-order">Order</button>
+        </div>
+
+</section>
 
     <!--footer-->
     <footer>

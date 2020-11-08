@@ -25,13 +25,16 @@
 
 <body>
 
-	<!--HEADER-->
+    <!--HEADER-->
 	<header>
-		<div class="btn_return">
-			<i class="fas fa-arrow-left"></i>
+		<div class="container_logo">
+            <a href="../index.html" title="Page d'accueil">
+                <i class="fas fa-arrow-left"></i>
+				<figure class="logo header__logo">
+					<img src="../images/logo/ohmyfood.png" alt="logo du site">
+				</figure>
+            </a>
 		</div>
-		<!--LOGO-->
-		<a href="../index.html"><img src="../images/logo/ohmyfood.png" alt="logo du site ohmyfood"></a>
 	</header>
 
 	<!--BACKGROUND-->
@@ -39,94 +42,177 @@
 
 	</div>
 
-	<main>
-		<!--composition du menu-->
-		<div class="container_title_menu">
-			<h2> The Enchanted Plate </h2> <i class="fas fa-heart"></i>
-			<div class="btn_like">
-
+    <section class="menu-container">
+		<div class="ligne">
+			<h1 class="heading">The Enchanted Plate</h1>
+			<div class="coeur">
+				<i class="far fa-heart"></i>
+				<i class="fas fa-heart"></i>
 			</div>
 		</div>
-		<!--ENTREE-->
-		<article class="container_menu">
-			<section class="container_entree">
-				<h3> <span>ENTR</span>EES</h3>
-
-
-				<div class="choice choice_entree">
-					<h4>Foie Gras Ravioli</h4>
-					<p class="main_paragraph">With truffle cream</p>
-					<p class="price">25€</p>
+		<!--BLOC-->
+		<h2 class="entree">ENTREES</h2>
+		<div class="menu-items">
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Foie Gras Ravioli</p>
+					<p>with truffle cream</p>
 				</div>
-
-				<div class="choice choice_entree">
-					<h4>Oscietra Caviar</h4>
-					<p class="main_paragraph">With buckwheat blinis</p>
-					<p class="price">35€</p>
+				<div class="menu-item__prix">
+					<p>25€</p>
 				</div>
-
-				<div class="choice choice_entree">
-					<h4>Lobster and Leek Foam</h4>
-					<p class="main_paragraph">Marinated with orange zest</p>
-					<p class="price">20€</p>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
 				</div>
-
-				<div class="choice choice_entree">
-					<h4>Duck Foie Gras</h4>
-					<p class="main_paragraph">With fig jam and grilled baguette</p>
-					<p class="price">35€</p>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Oscietra Caviar</p>
+					<p>with buckwheat blinis</p>
 				</div>
-			</section>
-			<!--MAIN DISH-->
-			<section class="container_main_dish">
-				<h3><span>MAIN</span>DISH</h3>
-
-				<div class="choice choice_main_dish">
-					<h4>Fresh Buttered Scallops</h4>
-					<p class="main_paragraph">With white celery puree</p>
-					<p class="price">40€</p>
+				<div class="menu-item__prix">
+					<p>35€</p>
 				</div>
-
-				<div class="choice choice_main_dish">
-					<h4>Pan-Fried Lobster</h4>
-					<p class="main_paragraph">With mashed sweet potatoes</p>
-					<p class="price">35€</p>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
 				</div>
-				<div class="choice choice_main_dish">
-					<h4>Braised ox Tail</h4>
-					<p class="main_paragraph">With wild rice and lemon zest</p>
-					<p class="price">44€</p>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Lobster and Leek Foam</p>
+					<p>marinated with orange zest</p>
 				</div>
-			</section>
-			<!--DESSERT-->
-			<section class="container_dessert">
-				<h3><span>DESS</span>ERTS</h3>
-
-				<div class="choice choice_dessert">
-					<h4>Chocolate and Hazelnut Macaroons</h4>
-					<p class="main_paragraph">With caramel butter ice cream</p>
-					<p class="price">18€</p>
+				<div class="menu-item__prix">
+					<p>20€</p>
 				</div>
-
-				<div class="choice choice_dessert">
-					<h4>Baba au rhum</h4>
-					<p class="main_paragraph">With lemon drizzle</p>
-					<p class="price">22€</p>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
 				</div>
-
-				<div class="choice choice_dessert">
-					<h4>Lemon Meringue Pie</h4>
-					<p class="main_paragraph">Destructured</p>
-					<p class="price">23€</p>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Duck Foie Gras</p>
+					<p>with fig jam and grilled baguetta</p>
 				</div>
-			</section>
-		</article>
-	</main>
+				<div class="menu-item__prix">
+					<p>35€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+		</div>
+		<!--end BLOC-->
 
-	<!--btn order-->
-	<div class="btn btn_order">
-		<p>order</p>
-	</div>
+		<!--BLOC-->
+		<h2 class="entree">MAIN DISH</h2>
+		<div class="menu-items">
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Fresh Buttered Scallops</p>
+					<p>woth white celery puree</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>40€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Pan-Fried Lobster</p>
+					<p>with mashed sweet potatoes</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>35€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Braised Ox Tail</p>
+					<p>with wild rice and lemon zest</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>44€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+		</div>
+		<!--end BLOC-->
+
+		<!--BLOC-->
+		<h2 class="entree">DESSERT</h2>
+		<div class="menu-items">
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Chocolate and Hazelnut Macaroons</p>
+					<p>with caramel butter ice cream</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>18€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Baba au rhum</p>
+					<p>with lemon drizzle</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>22€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+			<!--Debut item-->
+			<div class="menu-item">
+				<div class="menu-item__plat">
+					<p class="principal">Lemon Meringue Pie</p>
+					<p>Destructured</p>
+				</div>
+				<div class="menu-item__prix">
+					<p>23€</p>
+				</div>
+				<div class="menu-item__animation">
+					<i class="fas fa-check-circle"></i>
+				</div>
+			</div>
+			<!--End item-->
+		</div>
+		<!--end BLOC-->
+
+		<div class="btn-row">
+			<button class="btn-order">Order</button>
+		</div>
+
+</section>
 
 	<!--footer-->
 	<footer>

@@ -107,8 +107,8 @@ header {
   text-decoration: none;
 }
 header .header__logo img {
-  width: 150px;
-  height: 50px;
+  width: 270px;
+  height: 60px;
 }
 
 .icon-local {
@@ -121,6 +121,7 @@ header .header__logo img {
   margin-top: 8px;
   padding: 10px;
   font-size: 1rem;
+  font-family: "Roboto";
 }
 .icon-local .fa-map-marker-alt {
   margin: auto;
@@ -278,7 +279,7 @@ figure {
   max-width: 270px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 435px) {
   .container_place .container_menu {
     display: flex;
     flex-wrap: wrap;

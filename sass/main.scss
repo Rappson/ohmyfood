@@ -138,8 +138,8 @@ header{
     text-decoration: none;
     .header__logo{
         img{
-            width: 150px;
-            height: 50px;
+            width: 270px;
+            height: 60px;
         }
     }
 }
@@ -153,6 +153,7 @@ header{
     margin-top: 8px;
     padding: 10px;
     font-size: 1rem;
+    font-family: 'Roboto';
     .fa-map-marker-alt{
         margin: auto;
     }
@@ -312,7 +313,7 @@ figure{
 }
 .container_place{
     .container_menu{
-        @media (min-width: $tablet){
+        @media (min-width: 435px){
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
