@@ -6,6 +6,26 @@ body {
   margin: 0;
 }
 
+.bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin: 0 auto;
+}
+.bg-image.palette {
+  background-image: url("../images/restaurants/palette.jpg");
+}
+.bg-image.gourmand {
+  background-image: url("../images/restaurants/Le_gourmand.jpg");
+}
+.bg-image.enchanted {
+  background-image: url("../images/restaurants/enchanted.jpg");
+}
+.bg-image.bastille {
+  background-image: url("../images/restaurants/bastille.jpg");
+}
+
 span {
   text-decoration: underline;
   text-decoration-color: #99E2D0;
@@ -26,66 +46,35 @@ header a {
   color: black;
 }
 
-.presentation_picture {
-  margin: 0px;
-}
-.presentation_picture img {
-  height: 300px;
-  margin-left: -10px;
-  width: 102%;
-}
-@media (min-width: 768px) {
-  .presentation_picture img {
-    height: 500px;
-  }
-}
-@media (min-width: 1024px) {
-  .presentation_picture img {
-    height: 700px;
-  }
-}
-@media (min-width: 1440px) {
-  .presentation_picture img {
-    height: 1060px;
-  }
-}
-
 main {
   border: 1px solid black;
   border-radius: 30px;
   padding: 20px;
-  position: relative;
-  bottom: 60px;
   background-color: #f6f6f6;
 }
-@media (min-width: 1024px) {
-  main {
-    bottom: 455px;
-  }
-}
-main h2 {
+
+h2 {
   font-family: "shrikhand";
   font-size: 1.5rem;
 }
-main .container_title_menu {
+
+.container_title_menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 10rem;
 }
-main .container_title_menu .fa-heart {
+.container_title_menu .fa-heart {
   color: #fff;
   text-shadow: 1px 1px 5px black;
   position: relative;
   top: 35px;
 }
-main .container_title_menu .fa-heart:hover {
+.container_title_menu .fa-heart:hover {
   color: #9356DC;
 }
-main .container_dessert {
-  margin-bottom: 380px;
-}
-main .choice {
+
+.choice {
   border-radius: 30px;
   box-shadow: 2px 2px 5px grey;
   background-color: white;
@@ -98,18 +87,18 @@ main .choice {
   font-family: "Roboto";
 }
 @media (max-width: 425px) {
-  main .choice {
+  .choice {
     font-size: 0.8rem;
   }
 }
-main .choice h4 {
+.choice h4 {
   margin-top: 10px;
   margin-bottom: 0;
 }
-main .choice .main_paragraph {
+.choice .main_paragraph {
   width: 260px;
 }
-main .choice .price {
+.choice .price {
   position: relative;
   bottom: 62px;
   left: 87%;
@@ -158,11 +147,6 @@ footer {
   margin-top: 25px;
   position: relative;
   bottom: 13rem;
-}
-@media (min-width: 1024px) {
-  footer {
-    bottom: 30rem;
-  }
 }
 footer h3 {
   font-family: "shrikhand";

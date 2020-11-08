@@ -59,6 +59,27 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 body{
     margin: 0;
 }
+//BACKGROUND
+.bg-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 0 auto;
+    &.palette{
+        background-image: url("../images/restaurants/palette.jpg");
+    }
+    &.gourmand{
+        background-image: url("../images/restaurants/Le_gourmand.jpg");
+    }
+    &.enchanted{
+        background-image: url("../images/restaurants/enchanted.jpg");
+    }
+    &.bastille{
+        background-image: url("../images/restaurants/bastille.jpg");
+    }
+}
+
 
 span {
     text-decoration: underline;
@@ -78,36 +99,14 @@ header{
         color: black;
     }
 }
-//IMAGE DE PRESENTATION
-.presentation_picture{
-    margin: 0px;
-    img{
-        height: 300px;
-        margin-left: -10px;
-        width: 102%;
-        @media (min-width: $tablet){
-            height: 500px;
-        }
-        @media (min-width: 1024px){
-            height: 700px;
-        }
-        @media (min-width: 1440px){
-            height: 1060px;
-        }
-    }
-}
 
 //MAIN
 main{
     border: 1px solid black; //CHANGER LA COULEUR
     border-radius: 30px;
     padding: 20px;//OPTIMISER LE PADDING POUR LE RESTE DU MENU (QUITTE A FAIRE UN PAR UN)
-    position: relative;
-    bottom: 60px;
+
     background-color: #f6f6f6;
-    //media
-    @media (min-width: 1024px){
-        bottom: 455px;
     }
     h2{
         font-family: 'shrikhand';
@@ -128,9 +127,9 @@ main{
             }
         }
     }
-    .container_dessert{
-        margin-bottom: 380px;
-    }
+    //.container_dessert{
+       // margin-bottom: 380px;
+    //}
     .choice{
         border-radius: 30px;
         box-shadow: 2px 2px 5px grey;
@@ -159,7 +158,7 @@ main{
             left: 87%;
         }
     }
-}
+
 
 .btn_order{
     width: 60%;
@@ -198,7 +197,7 @@ footer {
     position: relative;
     bottom: 13rem;
     @media (min-width: 1024px) {
-        bottom: 30rem;
+      //  bottom: 30rem;
     }
     
     h3{
