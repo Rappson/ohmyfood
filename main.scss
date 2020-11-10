@@ -11,10 +11,6 @@
 $mobile_s: 320px;
 $mobile_m: 375px;
 $mobile_l: 425px;
-        //Tablet
-$tablet: 768px;
-        //ordi (laptop et pc fixe)
-$ordi: 1440px;
 
 
 //colors
@@ -37,13 +33,13 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     background-color: $color;
 }
 
-%btn_step{
+@mixin btn_step ($right: 35px){
     position: relative;
-    right: 35px;
+    right: $right;
     border: 1px solid $color-primary;
     border-radius: 50%;
     width: 25px;
-    height: 30px; //25px remplacé avec la prof
+    height: 60px; //25px remplacé avec la prof
     display: flex;
     justify-content: center;
     background-color: $color-primary;
@@ -58,22 +54,9 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
         display: flex;
         justify-content: center;
         color: #008766;
-        left: 220px;//mobile_s
-        @media (min-width: $mobile_m) {
-            left: 265px;
-        }
-        @media (min-width: $mobile_l){
-            left: 320px;
-        }
+        left: 315px;
     }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
 
 
 body{
@@ -82,7 +65,7 @@ body{
     background-color: $color-body;
 }
 
-
+/*
 //LOADING SPINNER
 .preloader{
     background-color: #f2f2f2;
@@ -127,7 +110,7 @@ body{
         transform: rotate(360deg);
     }
 }
-
+*/
 
 
 // ----HEADER----   
@@ -135,15 +118,19 @@ header{
     @include position-center();
     border-bottom: 1px solid black;
     box-shadow: 0px 2px grey;
-    text-decoration: none;
-    .header__logo{
-        img{
-            width: 270px;
-            height: 60px;
-        }
+    height: 80px;
+    .logo{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    a{
+        display: flex;
+        color: black;
+        //.img_logo{}
     }
 }
-
 
 
 // -----LOCALISATION-----
@@ -153,8 +140,9 @@ header{
     margin-top: 8px;
     padding: 10px;
     font-size: 1rem;
-    font-family: 'Roboto';
-    
+    .fa-map-marker-alt{
+        margin: auto;
+    }
 }
 
 
@@ -169,47 +157,39 @@ header{
 
     .discover{
         @include position-center();
-        height: 310px;
-        width: 100%;
+        height: 215px;
         flex-direction: column;
         text-align: center;
         padding: 10px 20px 10px 20px;
         .title{
-            margin-bottom: 50px;
+            margin: auto;
             font-size: 1.5rem;
         }
         .btn{
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             border-radius: 10% / 50%;
-            margin-top: 25px;
             height: 50px;
             font-size: 1.1rem;
             box-shadow: 0px 0px 5px grey; 
             cursor: pointer;
             &:hover{
             box-shadow: 0px 0px 5px grey; //rgba($color: #000000, opacity 0.5)
-            filter: brightness(1.1);}
+            filter: brightness(1.1);
+            }
     
             
 
             &_explore{
-                width: 270px;
                 display: flex;
-                justify-content: center;
                 padding-top: 10px;
+                justify-content: center;
+                align-content: center;
                 color: $color-white;
             }
         }
         }
-        //explanation
         .explanation{
             height: 360px;
-            margin-top: 30px;
-            width: 100%;
-            //media
-            @media (min-width: $ordi){
-                height: 220px;
-            }
             h2{
                 font-size: 1.5rem;
             }
@@ -219,36 +199,26 @@ header{
             }
             .container_step{
                 display: flex;
-                margin-top: 40px;
+                height: 150px;
                 flex-direction: column;
                 align-items: center;
                 height: 73%;
-                //media
-                @media (min-width: $ordi){
-                    flex-direction: row;
-                    justify-content: space-around;
-                }
-                
+            
             }
             .btn_step{
-                width: 80%;
                 display: flex;
-                justify-content: start;
-                margin-bottom: 35px;
+                margin: 10px;
                 width: 300px;
                 border: 1px solid $color-body;
                 border-radius: 30px;
                 box-shadow: 3px 3px 3px grey;
+                padding: 15px;
                 font-weight: bold;
-                //-----media-----
-                @media (max-width: $mobile_l) {
-                    width: 80%;
+                @media (max-width: $mobile_s) {
+                    width: 230px;
                 }
-                @media (min-width: $tablet){
-                    width: 60%;
-                }
-                @media (min-width: $ordi){
-                    width: 25%;
+                @media (min-width: $mobile_m) {
+                    width: 280px;
                 }
 
                 &:hover{
@@ -257,20 +227,8 @@ header{
                     color: $color-primary;
                 }
             }
-            .step__1{
-                @extend %btn_step;
-                margin-left: 35px;
-                margin-right: 5px;
-            }
-             .step__2{
-                @extend %btn_step;
-                margin-left: 30px;
-            }
-            .step__3{
-                @extend %btn_step;
-                margin-left: 30px;
-                margin-right: -5px;
-                
+            .step__1, .step__2, .step__3 {
+                @include btn_step()
             }
         }
 }
@@ -299,29 +257,16 @@ main{
         text-decoration: none;
         color: black;
     }
-    .title_main{
-        margin-left: 15px;
-        font-weight: bold;
-    }
 }
 figure{
     margin-top: 0px;
     margin-left: 0px;
     max-width: 270px;
 }
-.container_place{
-    .container_menu{
-        @media (min-width: 435px){
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        }
-    }
-    img{
+img{
         width: 151%;
         height: 255px;
-        }
-}
+    }
     .place{
         display: flex;
         flex-direction: column;
@@ -330,10 +275,6 @@ figure{
         margin-top: 25px;
         margin-left: 25px;
         overflow: hidden;
-        //----media----
-        @media (min-width: $tablet){
-            width: 390px;
-        }
         .container_text{
             display: flex;
             flex-direction: column;
@@ -342,7 +283,7 @@ figure{
             margin-right: 25px;
         }
         p{
-            margin: -10px 0px 20px 0px;
+            margin: -21px 0px 20px 0px;
         }
         
     }
@@ -371,15 +312,13 @@ figure{
 footer {
     background-color: #353535;
     width: 100%;
-    color: $color-white; //couleur du texte
+    color: $color-white;
     padding: 40px 20px 20px 20px;
     margin-top: 25px;
-      .title_footer{
-        font-family: 'shrikhand';
-        width: 150px;
-        height: 50px;
-        font-size: 25px;
-      }
+    
+    h3{
+        font-family: shrikhand-regular;
+    }
     p{
         &:hover{
             text-decoration: underline;

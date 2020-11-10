@@ -58,6 +58,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 
 body{
     margin: 0;
+    font-family: 'roboto';
 }
 //BACKGROUND
 .bg-image{
@@ -377,7 +378,7 @@ header{
 //footer
 footer {
     background-color: #353535;
-    width: 100%;
+    //width: 100%;
     color: $color-white;
     padding: 40px 20px 20px 20px;
     margin-top: 25px;
