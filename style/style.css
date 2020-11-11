@@ -318,6 +318,7 @@ figure {
 .menu_title .fa-heart {
   color: #fff;
   text-shadow: 1px 1px 5px black;
+  transition: color 1s;
 }
 .menu_title .fa-heart:hover {
   color: #9356DC;

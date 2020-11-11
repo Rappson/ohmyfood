@@ -53,10 +53,10 @@ header .header__logo img {
 
 .menu-container {
   background-color: #f2f2f2;
-  width: 100%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   margin-top: -50px;
+  padding: 10px;
 }
 
 .ligne {
@@ -224,6 +224,7 @@ header .header__logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .btn-order {
@@ -242,86 +243,10 @@ header .header__logo img {
   filter: brightness(1.1);
 }
 
-/*main{
-    border: 1px solid black; //CHANGER LA COULEUR
-    border-radius: 30px;
-    padding: 20px;//OPTIMISER LE PADDING POUR LE RESTE DU MENU (QUITTE A FAIRE UN PAR UN)
-    position: relative;
-    bottom: 30px;
-    background-color: #f6f6f6;
-    }
-    h2{
-        font-family: 'shrikhand';
-        font-size: 1.5rem;
-    }
-    .container_title_menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 10rem;
-        .fa-heart{
-            color: $color-white;
-            text-shadow: 1px 1px 5px black;
-            position: relative;
-            top: 35px;
-            &:hover{
-                color: $color-primary;
-            }
-        }
-    }
-    //.container_dessert{
-       // margin-bottom: 380px;
-    //}
-    .choice{
-        border-radius: 30px;
-        box-shadow: 2px 2px 5px grey;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        height: 105px;
-        padding-left: 15px;
-        cursor: pointer;
-        margin-bottom: 15px;
-        font-family: 'Roboto';
-        @media (max-width: $mobile_l) {
-            font-size: 0.8rem;
-        }
-
-        h4{
-            margin-top: 10px;
-            margin-bottom: 0;
-        }
-        .main_paragraph{
-            width: 260px;
-        }
-        .price{
-            position: relative;
-            bottom: 62px;
-            left: 87%;
-        }
-    }
-
-
-.btn_order{
-    width: 60%;
-    //position: relative;
-    //bottom: 365px;
-    //left: 95px;
-    border: 1px solid white;
-    background: $color-gradient;
-    color: $color-white;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto';
-    cursor: pointer;
-    margin: 8% 20%;
-}*/
 footer {
   background-color: #353535;
   color: #fff;
   padding: 40px 20px 20px 20px;
-  margin-top: 25px;
 }
 footer h3 {
   font-family: "shrikhand";
