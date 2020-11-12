@@ -161,7 +161,7 @@ header{
 // ----PRESENTATION----
 .presentation{
     @include position-center($color-body);
-    justify-content: content;
+    justify-content: center;
     flex-direction: column;
     //padding: 0 35px;
     border-top: 1px solid black;

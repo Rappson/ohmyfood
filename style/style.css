@@ -128,7 +128,7 @@ header .header__logo img {
   align-items: center;
   justify-content: center;
   background-color: #ecebeb;
-  justify-content: content;
+  justify-content: center;
   flex-direction: column;
   border-top: 1px solid black;
   box-shadow: 0px 0px 5px grey;
